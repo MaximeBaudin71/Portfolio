@@ -31,13 +31,9 @@ export default function Navbar() {
         <div className="space-x-8 hidden md:block">
           <Link
             href="/about"
-            className={`text-base  ${
-              router.asPath === "/about"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className="inline-block transform hover:scale-110 hover:-rotate-12 transition duration-300"
           >
-            About{" "}
+            A propos{" "}
             {router.asPath === "/about" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,13 +52,9 @@ export default function Navbar() {
           </Link>
           <Link
             href="/projects"
-            className={`text-base  ${
-              router.asPath === "/projects"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className="inline-block transform hover:scale-110 hover:-rotate-6 transition duration-300"
           >
-            Projects
+            Projets
             {router.asPath === "/projects" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +73,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/experience"
-            className={`text-base  ${
-              router.asPath === "/experience"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className="inline-block transform hover:scale-110 hover:-rotate-6 transition duration-300"
           >
             Experience{" "}
             {router.asPath === "/experience" && (
@@ -106,11 +94,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`text-base  ${
-              router.asPath === "/contact"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className="inline-block transform hover:scale-110 hover:-rotate-6 transition duration-300"
           >
             Contact
             {router.asPath === "/contact" && (
@@ -177,7 +161,7 @@ export default function Navbar() {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-10 h-10 p-3 rounded focus:outline-none"
+            className="w-10 h-10 p-3 rounded focus:outline-none transition duration-300"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {mounted && (
