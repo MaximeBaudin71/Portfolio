@@ -17,6 +17,7 @@ export default function Home({ repositories }) {
       <LatestCode></LatestCode>
     </ContainerBlock>
   );
+
 }
 
 export const getServerSideProps = async () => {
@@ -32,3 +33,11 @@ export const getServerSideProps = async () => {
     },
   };
 };
+
+
+// export async function getStaticProps() {
+  
+//   return {
+//     props: { skills },
+//   };
+// }

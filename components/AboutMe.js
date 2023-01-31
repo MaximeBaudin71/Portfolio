@@ -1,5 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
+import Image from "next/image";
+
 
 export default function AboutMe() {
   
@@ -117,52 +119,32 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
               <img
-                src="/../public/stack/c#-logo.png"
-                className="h-20 w-20 mx-4 my-4"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                className="h-20 w-20 mx-4 my-4"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className="h-20 w-20 mx-4 my-4"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                className="h-20 w-20 mx-4 my-4"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
-                className="h-20 w-20 mx-4 my-4"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                className="h-20 w-20 mx-4 my-4"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className="h-20 w-20 mx-4 my-4"
+                className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
             </div>
           </div>
@@ -170,4 +152,5 @@ export default function AboutMe() {
       </div>
     </section>
   );
+
 }

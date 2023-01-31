@@ -2,6 +2,8 @@ import React from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import userData from "@constants/data";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
@@ -34,11 +36,26 @@ export default function Hero() {
         </RoughNotationGroup>
       </div>
       {/* Image container */}
-      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
+      <div className="w-full relative mx-auto flex flex-col items-center gap-10">
+            <motion.div
+              className="relative w-400 h-400 xs:w-52 xs:h-52 flex justify-center items-center rounded-full p-3 before:absolute before:inset-0 before:border-t-4 before:border-b-4 before:border-black before:dark:border-white before:rounded-full before:animate-photo-spin"
+            >
+              <Image
+                src={userData.avatarUrl}
+                className="rounded-full"
+                width={400}
+                height={400}
+                alt="Profile Image"
+                quality={75}
+                priority={true}
+              />
+            </motion.div>
+      </div>
+      {/* <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
           <img src={userData.avatarUrl} alt="avatar" className=" shadow" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -16,11 +16,6 @@ const userData = {
       "Je suis developpeur .NET. J'aime concevoir et développer toute sorte d'application.",
     description: [
       `Developpeur .NET depuis plus de 3 ans, je suis très à l'aise avec cet environnement. J'ai pu réaliser des missions courtes et longues durées pour de gros comptes. Je m'adapte aux différents métiers et je propose des solutions adaptées aux problèmes rencontrés.`,
-
-      `Analyse cahier des charges ou expression de besoin`,
-      `Conception de l'application`,
-      `Developpement de l'application`,
-      `TMA/MCO`,
    ],
     currentProject: "RTE",
     currentProjectUrl: "https://www.rte-france.com/",
