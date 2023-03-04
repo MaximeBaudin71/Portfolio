@@ -28,11 +28,11 @@ export default function Hero() {
               Concepteur.
             </h1>
           </RainbowHighlight>
-          <RainbowHighlight color={colors[3]}>
+          {/* <RainbowHighlight color={colors[3]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Youtubeur.
             </h1>
-          </RainbowHighlight>
+          </RainbowHighlight> */}
         </RoughNotationGroup>
       </div>
       {/* Image container */}
@@ -50,6 +50,11 @@ export default function Hero() {
                 priority={true}
               />
             </motion.div>
+
+            <a href="CV/CV_Maxime_BAUDIN.pdf" download>
+                <button className="px-4 py-1 rounded-md bg-neutral-200 dark:bg-black shadow dark:text-white transform duration-200 font-medium  active:scale-90 lg:hover:bg-black lg:hover:text-white dark:lg:hover:bg-white dark:lg:hover:text-black"
+> Voici mon CV </button>
+            </a>
       </div>
       {/* <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">

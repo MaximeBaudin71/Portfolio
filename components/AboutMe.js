@@ -119,12 +119,14 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                src="stack/vbnet.png"
                 className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
+                alt="VB.NET"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
+                src="stack/csharp.png"
                 className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
+                alt="C#"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
@@ -135,7 +137,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
+                src="stack/trello.png"
                 className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
@@ -143,7 +145,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
+                src="stack/jira.png"
                 className="h-20 w-20 mx-4 my-4 hover:scale-110 transition duration-300 ease-in-out"
               />
             </div>

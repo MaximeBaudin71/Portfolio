@@ -22,17 +22,17 @@ const userData = {
   },
   experience: [
     {
-      title: "Developpeur .NET/ Chef de projet",
+      title: "Developpeur .NET Freelance",
       company: "RTE",
       year: "2022 - 2023",
       companyLink: "https://intel.com",
-      desc: "Developed pothole detection system with OpenCV and computer vision, detects potholes on roads and informs the driver.",
+      desc: "Mission de 9 mois pour le client RTE. Maintien et gestion d'un pool d'une trentaine d'application. Mes principales missions étaient de la MCO, évolution d'application ainsi que la création d'application from scratch.",
     },
     {
       title: "Développeur/ Chef de projet",
       company: "APERAM",
       year: "2018 - 2021",
-      companyLink: "https://upes.co.in",
+      companyLink: "https://www.rte-france.com/",
       desc: "Migration application soutien à la production.",
     },
     {
@@ -40,7 +40,7 @@ const userData = {
       company: "Michelin",
       year: "2018",
       companyLink: "https://upes.co.in",
-      desc: "(Stage de fin d’étude DUT) Ma mission principale est la simplification et l’automatisation de données sur des fichiers Excel ou les traitements étaient effectués manuellement par les techniciens ce qui leur engendrait une perte de temps considérable. La problématique de mon stage était donc d’accélérer et d’automatiser les tâches faites manuellement par les techniciens afin de gagner environ 3 heures de temps par opérateur chaque semaine.",
+      desc: "(Stage de fin d’étude DUT) Ma mission principale était la simplification et l’automatisation de données sur des fichiers Excel ou les traitements étaient effectués manuellement par les techniciens ce qui leur engendrait une perte de temps considérable. La problématique de mon stage était donc d’accélérer et d’automatiser les tâches faites manuellement par les techniciens afin de gagner environ 3 heures de temps par opérateur chaque semaine.",
     },
   ],
   resumeUrl:

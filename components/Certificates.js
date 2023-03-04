@@ -48,7 +48,7 @@ export default function Certificates() {
                       rel="noopener noreferrer"
                       className="px-4 py-1 rounded-md bg-neutral-200 dark:bg-black shadow dark:text-white transform duration-200 font-medium  active:scale-90 lg:hover:bg-black lg:hover:text-white dark:lg:hover:bg-white dark:lg:hover:text-black"
                     >
-                      View
+                      Voir
                     </motion.a>
                   </Link>
                 </div>
