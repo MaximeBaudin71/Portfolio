@@ -34,5 +34,15 @@ const LinkedIn = {
       },
       pinned: true,
     },
+    {
+      title: " SQL Server 2022 : Le cours Masterclass de 27 heures (2023)",
+      issuedDate: "24 Mai, 2023",
+      issuedBy: Udemy,
+      urls: {
+        pdfURL:
+          "https://www.udemy.com/certificate/UC-8b50ca5d-13d8-473e-95c0-a417a0f52c1f/",
+      },
+      pinned: true,
+    },
     /* .......other objects........ */
   ];

@@ -16,7 +16,7 @@ export default function Certificates() {
         </h1>
       </div>
  
-        <div className="max-w-6xl mx-auto mt-10 h-48 bg-white dark:bg-gray-800">
+        <div className="max-w-6xl mx-auto mt-10 h-60 bg-white dark:bg-gray-800">
           {certificatesData.map((cer, index) => {
             return (
             <section>

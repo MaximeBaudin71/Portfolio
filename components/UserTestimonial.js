@@ -3,17 +3,10 @@ import Head from "next/head"
 import { getXataClient, Review } from '../src/xata';
 
 
-
-// export const getServerSideProps = async () => {
-
-//   const products = await xata.db["Review"].getAll()
-//   return { props: { products } }
-// }
-
-
-export default function Testimonial({records}) {
+export default function UserTestimonial({records}) {
     const [Nom, setReviewName] = useState([])
     const [Entreprise, setReviewCompany] = useState([])
+    const [Fonction, setReviewFonction] = useState([])
     const [Avis, setReview] = useState([])
     const submitProduct = () => {
         fetch('/api/add-product', {
@@ -28,6 +21,7 @@ export default function Testimonial({records}) {
           })
         }).then(() => {
           window.location.reload();
+          alert("Merci pour votre retour ! Il va être mis en ligne sur le portfolio. A bientôt j'espère.");
         }).catch((error)=> {
             console.log(error)
         });
@@ -71,6 +65,22 @@ export default function Testimonial({records}) {
                 </div>
                 
               </div>
+              <div>
+                <label htmlFor="Fonction" className="block text-sm font-medium text-gray-700">
+                  Fonction
+                </label>
+                <div className="mt-1">
+                  <textarea
+                    id="about"
+                    name="about"
+                    rows={1}
+                    value= {Fonction}
+                    onChange = {(e)=> setReviewFonction(e.target.value)}
+                    className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                    />
+                </div>
+                
+              </div>
 
               <div>
                 <label htmlFor="about" className="block text-sm font-medium text-gray-700">
@@ -101,40 +111,9 @@ export default function Testimonial({records}) {
             </div>
           </div>
         </form>
-      </div>
-
-<p> test </p>
-           {
-            
-            records?.map(({Nom, Entreprise, Avis, id}) => (
-              <div key={id}>
-              <h2>{Nom}</h2>
-              <p>{Entreprise}</p>
-              <p>{Avis}</p>
-            </div>
-                ))
-              }
-
-              
-  
+      </div> 
   </div>
     
 
   )
 }
-
-export async function getStaticProps(){
-  const xata = getXataClient();
-
-  const page = await xata.db.Review.getPaginated({
-    pagination: {
-      size: 15,
-    },
-  });
-
-  console.log(page.records);
-  console.log('fini');
-}
-
-// export default Home;
-
